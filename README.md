@@ -2,6 +2,7 @@
 
 This repository contains artifacts for our RTAS '21 paper on IGOR, an approach
 for accelerating BFT SMR by eagerly executing on sensor data on multiple cores.
+The repo is open source and available at `https://github.com/efeslab/igor-ae`.
 
 The repo contains the following directories.
 
