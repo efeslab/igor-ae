@@ -1,0 +1,8 @@
+# Run on core 3 (of cores 0,1,2,3).
+# Run as a real-time process with SCHED_FIFO policy and highest priority.
+
+sudo taskset --cpu-list 3 chrt --f 99 ./bcast_recv.bin 0 10 0 100 1
+
+sudo taskset --cpu-list 3 chrt --f 99 ./bcast_send.bin 0 10 0 100 1
+
+

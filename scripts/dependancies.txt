@@ -1,0 +1,28 @@
+The following packages are needed to run the scripts on Ubuntu 20.04 LTS
+
+$ sudo apt-get install build-essential
+$ sudo apt install python-numpy
+$ sudo apt install python2-dev libfreetype-dev libpng-dev
+$ sudo apt install python-six python-pyparsing python-dateutil
+
+It is also necessary to install Matplotlib 1.4, which is the latest version of
+Matplotlib compatible with Python2. It will be installed to the user's home
+directory, and will not interfere with the Matplotlib3 system packages. It can
+be removed at any time by deleting the right directories.
+   
+[1] Download the Matplotlib2 source tarball.
+
+    https://github.com/matplotlib/matplotlib/releases/tag/v1.4.1
+
+[2] Next, navigate to the extracted matplotlib-1.4.1 directory and replace the
+    "http" with "https" in the "distribute_setup.py" script.
+
+    DEFAULT_URL = "https://pypi.python.org/..."
+
+[3] Next, run the following. Matplotlib 1.4 will be installed to
+    "~/.local/lib/python2.7/site-packages/matplot...".
+
+    $ python2 setup.py build
+    $ python2 setup.py install --user
+
+Matplotlib can now be imported into Python2 scripts.
