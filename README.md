@@ -310,13 +310,16 @@ only need to send a small number of minimally-sized messages.
 ## Repeating Results
 
 This section is intended for researchers intending to reproduce results for the
-IGOR paper. To aid in minimize effort on the part of reviewers, we provide a 
-Ubuntu 20.04 LTS virtual machine that already contains the required scripts and
+IGOR paper. To minimize effort on the part of reviewers, we provide a Ubuntu
+20.04 LTS virtual machine that already contains the required scripts and
 dependencies outlined [above](#processing-timing-data).
 
-The virtual machine and login details are provided via the AE HotCRP submission
-page.
+The virtual machine image can be found **here**.
+The username, user password, and root password are all `rtas21`.
 
+The `igor-ae` repository has already been cloned to `/home/rtas21`.
+A copy of the current version of the paper is in `~/igor-ae/paper/`, and can
+be compared against the results generated below.
 
 ### Latency
 
