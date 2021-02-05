@@ -344,14 +344,15 @@ from the replicas.
 To get the initial timing of each code segment, we ran each protocol in each
 configuration using its "default" schedule (described [here](#configuring-igor))
 over 100 iterations. The raw logs produced from this activity are provided in
-`~/igor-ae/data`.
+`~/igor-ae/data`. The first two columns of the logs contain application and
+activity codes. The third column contains timestamps in microseconds. 
 
 To generate the new schedules, we ran the `compress_schedule` script (described 
 [here](#generating-compressed-schedules)) on each log. The resulting schedules
 were then recompiled and tested in the IGOR software.
 
-To repeat this compression step on the raw data for all test cases, do the
-following:
+To repeat this compression step on the raw data and generate new schedules for
+all test cases, do the following:
 
 ```script
 $ cd ~/igor-ae/evaluation/partA_latency
