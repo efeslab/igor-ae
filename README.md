@@ -323,13 +323,23 @@ only need to send a small number of minimally-sized messages.
 This section is intended for researchers intending to reproduce results for the
 IGOR paper. To minimize effort on the part of reviewers, we provide a Ubuntu
 20.04 LTS virtual machine that already contains the required scripts and
-dependencies outlined [above](#processing-timing-data).
+dependencies outlined [above](#processing-timing-data). The virtual machine
+has been tested with VirtualBox 6.1.
 
 The virtual machine image can be downloaded from **here**.
-The username and password are both `rtas21`.
+
+### Setting up the VM
+
+Download the VM `.ovf` file from the above link.  Next, import it into your
+chosen virtual machine manager software. On VirtualBox, this is done by going
+to **File > Import Appliance**, selecting the `.ovf` file, and following the
+wizard.
+
+Once imported, run the VM. The username and password are both `rtas21`.
 
 The `igor-ae` repository has already been cloned to `/home/rtas21`.
 The file structure is described at the top of this document.
+
 
 ### Latency
 
