@@ -325,8 +325,8 @@ IGOR paper. To minimize effort on the part of reviewers, we provide a Ubuntu
 20.04 LTS virtual machine that already contains the required scripts and
 dependencies outlined [above](#processing-timing-data).
 
-The virtual machine image can be found **here**.
-The username, user password, and root password are all `rtas21`.
+The virtual machine image can be downloaded from **here**.
+The username and password are both `rtas21`.
 
 The `igor-ae` repository has already been cloned to `/home/rtas21`.
 The file structure is described at the top of this document.
