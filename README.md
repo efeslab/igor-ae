@@ -3,14 +3,25 @@
 This repository contains artifacts for our RTAS '21 paper on IGOR, an approach
 for accelerating BFT SMR by eagerly executing on sensor data on multiple cores.
 
-The [first section](#running-igor) of this document describes how to set up
-the RPi cluster used in our evaluation, as well as how to build and run the IGOR
-software. This section is intended for researchers seeking to test and
-extend IGOR in their own environment.
+The repo contains into the following directories.
 
-**For AE Committee:** The [second section](#repeating-results) of this document
-describes how to repeat the key results from the IGOR paper. This section is
-intended primarily for the artifact evaluation committee.
+- **data/** - raw timing data logged from our prototype
+- **evaluation/** - scripts for reproducing results in our paper evaluation
+- **paper/** - a copy of the IGOR paper
+- **scripts/** - scripts used for timing analysis and visualization
+- **setup/** - a schematic of the circuit we used for time synchronization in our prototype
+- **software/** - a Core Flight System project with our implementation source code
+
+We split this README file into two main sections.
+
+The [first section](#running-igor) describes how to set up the RPi cluster used
+in our evaluation, as well as how to build and run the IGOR software. This
+section is intended for researchers seeking to test and extend IGOR in their
+own environment.
+
+**For AE Committee:** The [second section](#repeating-results) describes how to
+repeat the key results from the IGOR paper. This section is intended primarily
+for the artifact evaluation committee.
 
 
 ## Running IGOR
@@ -318,8 +329,7 @@ The virtual machine image can be found **here**.
 The username, user password, and root password are all `rtas21`.
 
 The `igor-ae` repository has already been cloned to `/home/rtas21`.
-A copy of the current version of the paper is in `~/igor-ae/paper/`, and can
-be compared against the results generated below.
+The file structure is described at the top of this document.
 
 ### Latency
 
@@ -372,10 +382,12 @@ We scheduled tasksets in periodic rate groups from smallest period to largest. F
 each taskset, we determined if the taskset was schedulable with the default BFT protocol
 (OM for f = 1, TC for f = 2). If not, we replaced any tasks that did not meet deadlines
 with speculative IGOR tasks, then determined whether the resulting taskset was schedulable.
+
 The worst-case number of time slots needed to execute each stage of each protocol was
 determined by parsing the raw timing data in `~/igor-ae/data`.
 
-To repeat these steps, execute the following:
+To re-process these steps, including re-processing the raw timing data,
+execute the following:
 
 ```script
 $ cd ~/igor-ae/evaluation/partB_schedulability

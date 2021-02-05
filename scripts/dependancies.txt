@@ -1,7 +1,7 @@
 The following packages are needed to run the scripts on Ubuntu 20.04 LTS
 
 $ sudo apt-get install build-essential
-$ sudo apt install python-numpy
+$ sudo apt install python-numpy python-tk
 $ sudo apt install python2-dev libfreetype-dev libpng-dev
 $ sudo apt install python-six python-pyparsing python-dateutil
 
