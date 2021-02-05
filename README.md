@@ -3,14 +3,14 @@
 This repository contains artifacts for our RTAS '21 paper on IGOR, an approach
 for accelerating BFT SMR by eagerly executing on sensor data on multiple cores.
 
-The repo contains into the following directories.
+The repo contains the following directories.
 
-- **data/** - raw timing data logged from our prototype
-- **evaluation/** - scripts for reproducing results in our paper evaluation
-- **paper/** - a copy of the IGOR paper
-- **scripts/** - scripts used for timing analysis and visualization
-- **setup/** - a schematic of the circuit we used for time synchronization in our prototype
-- **software/** - a Core Flight System project with our implementation source code
+- `data/` - raw timing data logged from our prototype
+- `evaluation/` - scripts for reproducing results in our paper evaluation
+- `paper/` - a copy of the IGOR paper
+- `scripts/` - scripts used for timing analysis and visualization
+- `setup/` - a schematic of the circuit we used for time synchronization in our prototype
+- `software/` - a Core Flight System project with our implementation source code
 
 We split this README file into two main sections.
 
