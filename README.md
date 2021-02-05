@@ -7,7 +7,7 @@ The repo contains the following directories.
 
 - `data/` - raw timing data logged from our prototype
 - `evaluation/` - scripts for reproducing results in our paper evaluation
-- `paper/` - a copy of the IGOR paper
+- `paper/` - a copy of the IGOR paper (once the camera-ready version is available)
 - `scripts/` - scripts used for timing analysis and visualization
 - `setup/` - a schematic of the circuit we used for time synchronization in our prototype
 - `software/` - a Core Flight System project with our implementation source code
