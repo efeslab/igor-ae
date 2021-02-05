@@ -2,6 +2,7 @@
 
 This repository contains artifacts for our RTAS '21 paper on IGOR, an approach
 for accelerating BFT SMR by eagerly executing on sensor data on multiple cores.
+
 The repo is open source and available at `https://github.com/efeslab/igor-ae`.
 
 The repo contains the following directories.
@@ -25,7 +26,7 @@ repeat the key results from the IGOR paper. This section is intended primarily
 for the artifact evaluation committee.
 
 
-## Running IGOR
+## Deploying IGOR
 
 This section is intended for researchers setting up their own RPi cluster in
 order to test or extend IGOR.
@@ -205,9 +206,9 @@ SET(SIM_SCH_TABLE "default/default_sim_table.c")
 They can easily be set to any custom tables stored in `software/igor/igor_defs/tables`.
 
 
-#### Deploying IGOR
+#### Running IGOR
 
-We build IGOR by first deploying the software to each of the RPis, then building
+We build IGOR by first copying the software to each of the RPis, then building
 IGOR on the RPis in parallel. We do this by running the `build-cfs-rpi.sh` script,
 which can be found in `software/igor`.
 
@@ -217,7 +218,7 @@ $ ./build-cfs-rpi.sh
 ```
 
 The `USER` and `USER_RPI` variables at the top of the script need to be set to 
-to your username on your host computer (where you are deploying IGOR from) and
+to your username on your host computer (where you are copying IGOR from) and
 your RPis respectively. After IGOR builds on each RPi, it will be copied to
 a `cfs/` directory on the user's desktop on the RPi.
 
