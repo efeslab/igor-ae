@@ -326,7 +326,8 @@ IGOR paper. To minimize effort on the part of reviewers, we provide a Ubuntu
 dependencies outlined [above](#processing-timing-data). The virtual machine
 has been tested with VirtualBox 6.1.
 
-The virtual machine image can be downloaded from **here**.
+The virtual machine image can be downloaded from [here](https://drive.google.com/file/d/1yImohmgo7i_Mb3-7MkVPr02hBEE2hpz7/view?usp=sharing).
+
 
 ### Setting up the VM
 
@@ -338,7 +339,7 @@ wizard.
 Once imported, run the VM. The username and password are both `rtas21`.
 
 The `igor-ae` repository has already been cloned to `/home/rtas21`.
-The file structure is described at the top of this document.
+The file structure is described at the top of this README.
 
 
 ### Latency
